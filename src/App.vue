@@ -1,17 +1,19 @@
-<script setup lang="ts">
-import { RouterLink, RouterView } from 'vue-router'
-import PokeApi from './components/PokeApi.vue';
+<template>
+  <div>
+    <PokemonPage />
+  </div>
+</template>
+
+<script lang="ts">
+import PokemonPage from './components/PokemonPage.vue'
+
+export default {
+  components: {
+    PokemonPage
+  }
+};
 </script>
 
-<template>
-  <header>
-  </header>
-  <body>
-    <PokeApi/>
-  </body>
-
-  <RouterView />
-</template>
 
 <style scoped>
 header {
